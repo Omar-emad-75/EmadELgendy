@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SECURITY: CSP & Referrer Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://unpkg.com; font-src 'self' https://unpkg.com; img-src 'self' data: https:;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="icon" href="imgs/Logo.png">
+  <title>Emad Elgendy </title>
+  <link rel="stylesheet" href="web.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="progressBar"></div>
+
+  <!-- NAVIGATION -->
+  <header class="top-bar">
+    <div class="nav-container">
+      <a href="#" class="logo-wrapper">
+        <img src="imgs/Logo.png" alt="Logo" class="header-logo">
+        <span class="logo-text">ELGENDY.</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links">
+        <a href="#Summary" class="nav-item" id="nav-summary">Summary</a>
+        <a href="#Experience" class="nav-item" id="nav-experience">Journey</a>
+        <a href="#Skills" class="nav-item" id="nav-skills">Skills</a>
+        <a href="#contact" class="nav-item" id="nav-contact">Contact</a>
+      </nav>
+
+      <div class="controls-wrapper">
+        <button id="lang-toggle" class="toggle-btn lang-btn">AR</button>
+        <button id="theme-toggle" class="toggle-btn" aria-label="Toggle Dark Mode">
+          <i class='bx bx-moon'></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO: THE INTRO -->
+  <section class="hero-section">
+    <div class="hero-layout">
+      <!-- Image is now animated -->
+      <img src="imgs/emadphoto.jpg" alt="Emad Elgendy" class="hero-img">
+      
+      <!-- Text is staggered animated -->
+      <div>
+        <!-- TYPING ANIMATION -->
+        <div class="hero-intro" id="hero-role">Sales Manager</div>
+        <h1 class="hero-title" id="hero-name">Emad Elgendy</h1>
+        <div class="hero-text" id="hero-bio">
+          <span class="content-en">
+            Sales Manager at <a href="https://x-wolfs.com/%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa%d9%86%d8%a7/" target="_blank" rel="noopener noreferrer" class="wolf">X-WOLf</a>. With over 27 years of experience in sales and distribution across Egypt and KSA, this is my professional journey.
+          </span>
+          <span class="content-ar" style="display: none;">
+            مدير مبيعات <a href="https://x-wolfs.com/%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa%d9%86%d8%a7/" target="_blank" rel="noopener noreferrer" class="wolf">X-WOLf</a>. مع أكثر من 27 عاماً من الخبرة في المبيعات والتوزيع في مصر والسعودية، هذه هي رحلتي المهنية.
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- New Scroll Indicator -->
+    <div class="scroll-indicator">
+      <i class='bx bx-chevron-down'></i>
+    </div>
+  </section>
+
+  <!-- STORY CONTAINER -->
+  <div class="story-container">
+
+    <!-- CHAPTER 1: SUMMARY -->
+    <div class="chapter spotlight-item" id="Summary">
+      <div class="chapter-header">
+        <span class="chapter-num" id="lbl-ch1">Chapter 01</span>
+        <h2 class="chapter-title" id="title-summary">The Summary</h2>
+      </div>
+      <div class="summary-text">
+        <span class="content-en">
+          My career began as a Sales Representative at <span class="hover-trigger">Menatel<img src="imgs/mm.png" alt="Menatel Phone" class="popup-image"></span> where I learned the fundamentals of customer acquisition. For the next 24 years, I operated as an Independent Sales Professional in Egypt, mastering the mobile accessories market. Today, I apply that lifetime of experience as the Sales Manager for <a href="https://x-wolfs.com/%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa%d9%86%d8%a7/" target="_blank" rel="noopener noreferrer" class="wolf">X-WOLf</a>.
+        </span>
+        <span class="content-ar" style="display: none;">
+          بدأت مسيرتي كمندوب مبيعات في <span class="hover-trigger">ميناتل<img src="imgs/mm.png" alt="Menatel Phone" class="popup-image"></span> حيث تعلمت أساسيات كسب العملاء. على مدى 24 عاماً تالية، عملت كمحترف مبيعات مستقل في مصر، متقناً سوق إكسسوارات الهواتف المحمولة. اليوم، أطبق تلك الخبرة الطويلة كمدير مبيعات لشركة <a href="https://x-wolfs.com/%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa%d9%86%d8%a7/" target="_blank" rel="noopener noreferrer" class="wolf">X-WOLf</a>.
+        </span>
+      </div>
+    </div>
+
+    <!-- CHAPTER 2: EXPERIENCE TIMELINE -->
+    <div class="chapter spotlight-item" id="Experience">
+      <div class="chapter-header">
+        <span class="chapter-num" id="lbl-ch2">Chapter 02</span>
+        <h2 class="chapter-title" id="title-experience">The Journey</h2>
+        
+        <div style="margin-top: 15px; font-weight: 700; color: var(--accent-color); font-size: 1.1rem;">
+          <span class="content-en">From Payphones to X-WOLF Sales Manager – A 27-Year Journey in Sales Strategy.</span>
+          <span class="content-ar" style="display: none;">من بطاقات "ميناتل" إلى مدير مبيعات اكس ولف – 27 عاماً من الخبرة في إدارة المبيعات.</span>
+        </div>
+      </div>
+      
+      <div class="timeline">
+        
+        <!-- Role 1: MENATEL (The Beginning) -->
+        <div class="timeline-item">
+          <div class="role-date" id="date-menatel">1 Year</div>
+          <h3 class="role-title" id="role-menatel">Sales Representative</h3>
+          <span class="company-link">Menatel</span>
+          
+          <div class="role-desc">
+            <!-- English -->
+            <span class="content-en">
+              <p>My story begins in the golden era of telecommunications in Egypt, with <span class="hover-trigger">Menatel<img src="imgs/mm.png" alt="Menatel Phone" class="popup-image"></span>. At a time when payphone booths filled the streets and a calling card was a staple in every wallet, I started on the ground as a Sales Representative. Through relentless drive, I became one of the top-performing representatives in Alexandria, helping lead our branch to achieve the highest sales figures nationwide.</p>
+            </span>
+            <!-- Arabic -->
+            <span class="content-ar" style="display: none;">
+              <p>بدأت رحلتي المهنية في عصر كان فيه الاتصال سلعة ثمينة، مع شركة <span class="hover-trigger">"ميناتل"<img src="imgs/mm.png" alt="Menatel Phone" class="popup-image"></span>، حين كانت كبائن الهواتف علامة مميزة في شوارع مصر. بدأت كمندوب مبيعات، وبفضل الله ثم الإصرار، صُنفت كواحد من أفضل المناديب على مستوى الإسكندرية، وساهمت في جعل فرعنا الأكثر مبيعاً على مستوى الجمهورية.</p>
+            </span>
+          </div>
+        </div>
+
+        <!-- Role 2: FREELANCE (The Growth) -->
+        <div class="timeline-item">
+          <div class="role-date" id="date-freelance">24 Years</div>
+          <h3 class="role-title" id="role-freelance">Independent Sales Professional</h3>
+          <span class="company-link">Egypt Market</span>
+          
+          <div class="role-desc">
+            <!-- English -->
+            <span class="content-en">
+              <p>Building on this foundation, I transitioned into entrepreneurship, running my own Independent Sales Professional in the mobile accessories market for 24 years. This period honed my instincts for market trends, supply chain management, and customer psychology.</p>
+            </span>
+            <!-- Arabic -->
+            <span class="content-ar" style="display: none;">
+              <p>بعد تحقيق هذه النجاحات، قررت خوض تحدي العمل الحر، حيث أسست وأدرت عملي الخاص في مجال إكسسوارات الهواتف المحمولة لمدة 24 عاماً، اكتسبت خلالها خبرة عميقة في فهم السوق واحتياجات العملاء و التعامل مع كبار المستوردين.</p>
+            </span>
+          </div>
+        </div>
+
+        <!-- Role 3: X-WOLF (The Leadership) -->
+        <div class="timeline-item">
+          <div class="role-date" id="date-xwolf">Present</div>
+          <h3 class="role-title">Sales Manager</h3>
+          <a href="https://x-wolfs.com/%d9%85%d9%86%d8%aa%d8%ac%d8%a7%d8%aa%d9%86%d8%a7/" target="_blank" rel="noopener noreferrer" class="company-link wolf">X-WOLf</a>
+          
+          <div class="role-desc">
+            <!-- English -->
+            <span class="content-en">
+              <p style="margin-bottom: 10px;">However, my most significant chapter began when I moved to Saudi Arabia to join X-Wolf. I started, once again, as a Sales Representative. My impact was immediate; within 18 months of driving revenue and exceeding targets, I was promoted to Sales Manager.</p>
+              
+              <p style="margin-bottom: 5px;"><strong>The Strategic Turnaround:</strong></p>
+              <p style="margin-bottom: 10px;">My first challenge as Manager was human capital. I inherited a team of representatives whose background was solely in the food industry, not technology. I didn't replace them; I transformed them. I designed a rigorous training program to pivot their skills to the mobile accessories sector, established solid operational policies, and instilled a culture of efficiency in 6 months.</p>
+              
+              <p style="margin-bottom: 5px;"><strong>The Result:</strong></p>
+              <p>This retrained force was deployed across the Kingdom. The result was a massive surge in Sales, allowing us to scale operations significantly. We successfully opened multiple new branches and warehouses, establishing X-Wolf as a dominant player across Saudi Arabia.</p>
+            </span>
+
+            <!-- Arabic -->
+            <span class="content-ar" style="display: none;">
+              <p style="margin-bottom: 10px;">انتقلت بعدها للمملكة العربية السعودية وانضممت لشركة X-Wolf كمندوب مبيعات. لم يستغرق الأمر طويلاً لإثبات كفاءتي؛ فبعد عام ونصف فقط من تحقيق أرقام قياسية، تمت ترقيتي إلى مدير مبيعات الشركة.</p>
+              
+              <p style="margin-bottom: 5px;"><strong>نقطة التحول الاستراتيجي:</strong></p>
+              <p style="margin-bottom: 10px;">عند تولي الإدارة، قمت بتكوين فريق من المناديب الذين كانت خبرتهم مقتصرة سابقاً على "قطاع الأغذية". قبلت التحدي، وقمت بتدريبهم وإعادة تأهيلهم للعمل باحترافية في قطاع التكنولوجيا والإكسسوارات. قمت بترسيخ سياسات عمل صارمة وتنظيم صفوفهم في سته اشهر فقط.</p>
+              
+              <p style="margin-bottom: 5px;"><strong>النتيجة:</strong></p>
+              <p>بعد نشر هذا الفريق المدرب في مختلف أنحاء المملكة، ارتفعت مبيعات الشركة بشكل ملحوظ، مما مكننا من التوسع الجغرافي الكبير، وافتتاح العديد من الفروع والمخازن الجديدة لتغطية كافة أرجاء السعودية.</p>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CHAPTER 3: SKILLS -->
+    <div class="chapter spotlight-item" id="Skills">
+      <div class="chapter-header">
+        <span class="chapter-num" id="lbl-ch3">Chapter 03</span>
+        <h2 class="chapter-title" id="title-skills">Skills</h2>
+      </div>
+      
+      <div class="skills-cloud content-en">
+        <div class="skill-tag">Strategic Sales Planning</div>
+        <div class="skill-tag">Team Leadership</div>
+        <div class="skill-tag">Sales Policy</div>
+        <div class="skill-tag">Territory Management</div>
+        <div class="skill-tag">Distribution Networks</div>
+        <div class="skill-tag">CRM</div>
+        <div class="skill-tag">Market Analysis</div>
+        <div class="skill-tag">Egypt & KSA Markets</div>
+      </div>
+
+      <div class="skills-cloud content-ar" style="display: none;">
+        <div class="skill-tag">تخطيط المبيعات الاستراتيجي</div>
+        <div class="skill-tag">قيادة الفريق</div>
+        <div class="skill-tag">سياسات المبيعات</div>
+        <div class="skill-tag">إدارة المناطق</div>
+        <div class="skill-tag">شبكات التوزيع</div>
+        <div class="skill-tag">إدارة العملاء</div>
+        <div class="skill-tag">تحليل السوق</div>
+        <div class="skill-tag">أسواق مصر والسعودية</div>
+      </div>
+    </div>
+
+    <!-- CHAPTER 4: LANGUAGES -->
+    <div class="chapter spotlight-item" id="Languages">
+      <div class="chapter-header">
+        <span class="chapter-num" id="lbl-ch4">Chapter 04</span>
+        <h2 class="chapter-title" id="title-languages">Languages</h2>
+      </div>
+      <p class="summary-text">
+        <span class="content-en">Fluent in Arabic (Native)</span>
+        <span class="content-ar" style="display: none;">اللغة العربية</span>
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="story-footer" id="contact">
+      
+      <div class="social-icons">
+        <a href="https://www.snapchat.com/@emadelgendy23?sender_web_id=815f9d98-519a-4cad-bd9c-5fc498a520c5&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" class="social-link snap"><i class='bx bxl-snapchat'></i></a>
+        <a href="mailto:emad.elgendy2@icloud.com" class="social-link email"><i class='bx bx-envelope'></i></a>
+        <a href="https://wa.me/966532690031" target="_blank" rel="noopener noreferrer" class="social-link wa"><i class='bx bxl-whatsapp'></i></a>
+      </div>
+
+      <p class="copyright" style="font-size: 0.9rem; color: var(--desc-color);">
+        <span class="content-en">© 2025 Emad Elgendy.</span>
+        <span class="content-ar" style="display: none;">© 2025 عماد الجندي.</span>
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    // 1. SPOTLIGHT EFFECT (Mouse Glow)
+    document.querySelectorAll('.spotlight-item').forEach(card => {
+      card.onmousemove = e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+      }
+    });
+
+    // 2. SCROLL REVEAL (Handles Drawing Timeline & Staggered Items)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          
+          if (entry.target.id === 'Experience') {
+            const items = entry.target.querySelectorAll('.timeline-item');
+            items.forEach((item, index) => {
+              setTimeout(() => item.classList.add('show-item'), index * 300);
+            });
+          }
+
+          if (entry.target.id === 'Skills') {
+            const tags = entry.target.querySelectorAll('.skills-cloud:not([style*="display: none"]) .skill-tag');
+            tags.forEach((tag, index) => {
+              setTimeout(() => tag.classList.add('show-skill'), index * 100);
+            });
+          }
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.chapter').forEach(el => observer.observe(el));
+
+    // Handle typing animation end
+    document.querySelector('.hero-intro').addEventListener('animationend', function(e) {
+      if (e.animationName === 'typing') this.classList.add('typed');
+    });
+
+    // 3. SCROLL PROGRESS & HEADER SHADOW
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.width = scrolled + "%";
+      
+      if (winScroll > 10) {
+        document.querySelector('.top-bar').style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+      } else {
+        document.querySelector('.top-bar').style.boxShadow = "none";
+      }
+    };
+
+    // 4. DARK MODE
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    let rotation = 0;
+
+    toggleBtn.addEventListener('click', () => {
+      toggleBtn.classList.add('active-click');
+      setTimeout(() => toggleBtn.classList.remove('active-click'), 200);
+
+      body.classList.add('theme-transitioning');
+      setTimeout(() => body.classList.remove('theme-transitioning'), 600);
+
+      body.classList.toggle('dark-mode');
+      rotation += 180;
+      
+      const icon = toggleBtn.querySelector('i');
+      icon.style.opacity = '0';
+      
+      setTimeout(() => {
+        toggleBtn.style.transform = `rotate(${rotation}deg)`;
+        icon.className = body.classList.contains('dark-mode') ? 'bx bx-sun' : 'bx bx-moon';
+        icon.style.opacity = '1';
+      }, 200);
+    });
+
+    // 5. TRANSLATION & ANIMATION
+    const langBtn = document.getElementById('lang-toggle');
+    const simpleText = {
+      'hero-name': ['Emad Elgendy', 'عماد الجندي'],
+      'hero-role': ['Sales Manager', 'مدير مبيعات'],
+      'title-summary': ['The Summary', 'الملخص'],
+      'title-experience': ['The Journey', 'الرحلة المهنية'],
+      'title-skills': ['Skills', 'المهارات'],
+      'title-languages': ['Languages', 'اللغات'],
+      'lbl-ch1': ['Chapter 01', 'الفصل الأول'],
+      'lbl-ch2': ['Chapter 02', 'الفصل الثاني'],
+      'lbl-ch3': ['Chapter 03', 'الفصل الثالث'],
+      'lbl-ch4': ['Chapter 04', 'الفصل الرابع'],
+      'nav-summary': ['Summary', 'الملخص'],
+      'nav-experience': ['Journey', 'الرحلة'],
+      'nav-skills': ['Skills', 'المهارات'],
+      'nav-contact': ['Contact', 'تواصل'],
+      'role-freelance': ['Independent Sales Professional', 'محترف مبيعات مستقل'],
+      'role-menatel': ['Sales Representative', 'مندوب مبيعات'],
+      'date-xwolf': ['Present', 'حالياً'],
+      'date-freelance': ['24 Years', '24 سنة'],
+      'date-menatel': ['1 Year', 'سنة واحدة']
+    };
+
+    let isEnglish = true;
+    
+    langBtn.addEventListener('click', () => {
+      document.body.classList.add('lang-switching');
+
+      setTimeout(() => {
+        isEnglish = !isEnglish;
+        langBtn.textContent = isEnglish ? 'AR' : 'EN';
+        document.documentElement.setAttribute('dir', isEnglish ? 'ltr' : 'rtl');
+
+        document.querySelectorAll('.content-en').forEach(el => el.style.display = isEnglish ? 'block' : 'none');
+        document.querySelectorAll('.content-ar').forEach(el => el.style.display = isEnglish ? 'none' : 'block');
+        
+        document.querySelectorAll('.skills-cloud.content-en').forEach(el => el.style.display = isEnglish ? 'flex' : 'none');
+        document.querySelectorAll('.skills-cloud.content-ar').forEach(el => el.style.display = isEnglish ? 'none' : 'flex');
+        
+        const visibleTags = document.querySelectorAll(isEnglish ? '.skills-cloud.content-en .skill-tag' : '.skills-cloud.content-ar .skill-tag');
+        visibleTags.forEach((tag, i) => {
+          tag.classList.remove('show-skill');
+          setTimeout(() => tag.classList.add('show-skill'), i * 50);
+        });
+
+        for (const [id, vals] of Object.entries(simpleText)) {
+          if(document.getElementById(id)) document.getElementById(id).textContent = isEnglish ? vals[0] : vals[1];
+        }
+      }, 250); 
+
+      setTimeout(() => {
+        document.body.classList.remove('lang-switching');
+      }, 600);
+    });
+  </script>
+</body>
+</html>
